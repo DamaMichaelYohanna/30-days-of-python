@@ -49,3 +49,21 @@ class SinglyLinkedList:
 
             previous: Node = current
             current: Node = current.next
+
+    def search(self, data) -> bool:
+        """search for existence of data. Return true if found otherwise, false. Speed is O(n)"""
+        current: Node = self.tail
+        while current:
+            value: str | int = current.data  # assuming values will be str or int
+            if value == data:
+                return True  # return true if found
+            else:
+                current: Node = current.next  # move to next node if not found
+
+        return False  # return false if list is empty
+
+    def clear(self):
+        """clear the entire linkedlist"""
+        self.tail = None
+        self.head = None
+        self.item = 0
