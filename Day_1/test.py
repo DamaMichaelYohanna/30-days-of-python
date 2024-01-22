@@ -19,6 +19,13 @@ class MyTestCase(unittest.TestCase):
         singlylinkedlist.remove("hello")
         self.assertEqual(len(singlylinkedlist), 0)
 
+    def test_search(self):
+        found = singlylinkedlist.search("hello")
+        self.assertEqual(found, False)
+
+    def test_clear(self):
+        singlylinkedlist.clear()
+        self.assertEquals(singlylinkedlist.head, None)
 
 if __name__ == '__main__':
     unittest.main()
