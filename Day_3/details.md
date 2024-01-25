@@ -2,7 +2,7 @@
 A __Stack__ is a linear data structure which allow pilling up or adding node one on top the other. It's follows the 
 **Last-In-First-Out(LIFO)** principles. Each node has a pointing to the next node above it.
 
-Stack has majorly two operation: 
+Stack has majorly four operations: 
 - push(insert a new node on top of the stack)
 - pop(remove and return the topmost node)
 - peck(view a particular node without deleting it)
